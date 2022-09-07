@@ -6,7 +6,6 @@ bp = Blueprint('fact', __name__, url_prefix="/facts")
 def index(): 
     if request.method == 'POST':
         print(request.form)
-        print("i made it here")
         return redirect('/facts')
     
     return render_template('facts/index.html')
